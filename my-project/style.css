@@ -6,3 +6,12 @@
   color: #2c3e50;
   margin-top: 60px;
 }
+
+.parallax {
+  background-image: url("https://cdn.travelpulse.com/images/54aaedf4-a957-df11-b491-006073e71405/ee952e9e-f09c-49c2-bc5d-4303c880173a/630x355.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
