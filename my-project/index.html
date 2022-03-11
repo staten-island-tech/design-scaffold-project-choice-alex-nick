@@ -9,25 +9,23 @@
   </head>
 
   <body>
-
     <div class="navbar">
       <a href="#header">Home</a>
-      
+
       <div class="dropdown">
-        <button class="dropbtn">Dropdown 
+        <button class="dropbtn">
+          Dropdown
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
           <a class="hovers pr-20" href="https://www.gohawaii.com/">Hawaii</a>
           <a class="hovers pr-20" href="#attractions">Attractions</a>
-          <a class="hovers pr-20" href="#image gallery">Image Gallery</a>
           <a class="hovers pr-20" href="#food">Food</a>
+          <a class="hovers pr-20" href="#image gallery">Image Gallery</a>
           <a class="hovers pr-20" href="#map">Map</a>
         </div>
-      </div> 
+      </div>
     </div>
-
-
 
     <header
       class="
@@ -41,7 +39,8 @@
       "
     >
       <div
-        class="header
+        class="
+          header
           p-5
           text-9xl
           font-mono
@@ -56,7 +55,7 @@
     </header>
     <section class="max-w-lg m-auto">
       <article>
-        <h1 class="text-center mb-10 text-6xl">The Islands</h1>
+        <h1 class="text-center mb-10 text-6xl underline">The Islands</h1>
         <iframe
           class=""
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2277070.173200597!2d-157.61467583837666!3d20.39093593694192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7bffdb064f79e005%3A0x4b7782d274cc8628!2sHawaii!5e0!3m2!1sen!2sus!4v1646419388668!5m2!1sen!2sus"
@@ -88,34 +87,112 @@
       </p>
     </section>
 
-
     <span id="attractions"></span>
 
-<div class="parent">
-  
-  <div class="child">
-    <img class="fish" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrLDSSTefCpf0zwMiNdjEkPUuY_2Nqc95C_w&usqp=CAU" alt="Waikiki beach">
-    <header>Waikiki Beach and Diamond Head Monument</header>
-<p class="adult">Waikiki, with its beautiful stretch of oceanfront beach, is Hawaii's biggest tourist attraction. A suburb of Honolulu, Waikiki is popular for its big resorts, dining, entertainment, and shopping.
-  The boardwalk, known as the Waikiki Beach Walk, is lined with cafes and entertainment venues, while Kuhio and KalaKaua Avenues are where the bulk of the area's restaurants and boutiques can be found.</p>
- 
-  </div>
+    <h1 class="text-center mb-10 text-6xl underline pt-20">Attractions</h1>
+    <section class="attractions">
+      <div class="waikiki-beach">
+        <img
+          class="attraction-img"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrLDSSTefCpf0zwMiNdjEkPUuY_2Nqc95C_w&usqp=CAU"
+          alt="Waikiki beach"
+        />
+        <header>Waikiki Beach and Diamond Head Monument</header>
+        <p class="attraction-desc">
+          Waikiki, with its beautiful stretch of oceanfront beach, is Hawaii's
+          biggest tourist attraction. A suburb of Honolulu, Waikiki is popular
+          for its big resorts, dining, entertainment, and shopping. The
+          boardwalk, known as the Waikiki Beach Walk, is lined with cafes and
+          entertainment venues, while Kuhio and KalaKaua Avenues are where the
+          bulk of the area's restaurants and boutiques can be found.
+        </p>
+      </div>
 
-  <div class="child">
-    <img class="fish" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmnqOjrCDKJQsEA8Lj_Qliyw22DUe3hkQvHMGeyLP-hmB4J-sf_VoV2vAJfzx16K-dbxc&usqp=CAU" alt="USS Arizona">
-    <header>Pearl Harbor and USS Arizona Memorial</header>
-<p class="adult">Pearl Harbor is a National Historic Landmark and active military base that earned its place in history for the 1941 attack, which killed 1,177 servicemen on the USS Arizona. The site is now home to several attractions that are part of the World War II Valor in the Pacific Monument, including the USS Arizona Memorial, which floats above the remains of the sunken ship - parts of which can be seen protruding from the water. There is no cost for a tour of the memorial, however reservations are recommended due to its popularity.</p>
- 
-  </div>
+      <div class="uss-arizona">
+        <img
+          class="attraction-img"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmnqOjrCDKJQsEA8Lj_Qliyw22DUe3hkQvHMGeyLP-hmB4J-sf_VoV2vAJfzx16K-dbxc&usqp=CAU"
+          alt="USS Arizona"
+        />
+        <header>Pearl Harbor and USS Arizona Memorial</header>
+        <p class="attraction-desc">
+          Pearl Harbor is a National Historic Landmark and active military base
+          that earned its place in history for the 1941 attack, which killed
+          1,177 servicemen on the USS Arizona. The site is now home to several
+          attractions that are part of the World War II Valor in the Pacific
+          Monument, including the USS Arizona Memorial, which floats above the
+          remains of the sunken ship - parts of which can be seen protruding
+          from the water. There is no cost for a tour of the memorial, however
+          reservations are recommended due to its popularity.
+        </p>
+      </div>
+    </section>
 
-</div>
+    <span id="food"></span>
 
-    
-    
-  
+    <h1 class="text-center mb-10 text-6xl underline pt-20">Food</h1>
+    <section class="food">
+      <div class="manapua">
+        <img
+          class="food-img"
+          src="https://i.huffpost.com/gen/2651718/thumbs/o-MANAPUA-HAWAII-570.jpg"
+          alt="Manapua"
+        />
+        <header>Manapua</header>
+        <p class="food-desc">
+          Steamed or baked manapua? Ask any Hawaii local this question and
+          you're guaranteed a passionate response. These pillowy buns are a
+          staple of local cuisine. They can be filled with char siu, chicken,
+          beans or anything else your heart desires. Bring these to a potluck
+          and you'll be hailed as a hero.
+        </p>
+      </div>
 
+      <div class="poke">
+        <img
+          class="food-img"
+          src="https://i.huffpost.com/gen/2651652/thumbs/o-POKE-FISH-570.jpg"
+          alt="Poke"
+        />
+        <header>Poke</header>
+        <p class="food-desc">
+          Ridiculously fresh, raw seafood marinated in the sauce of your
+          choosing. The most popular variety is ahi poke, which is made with
+          yellowfin tuna. If you're feeling adventurous, order the tako
+          (octopus). A poke bowl (poke served on a bed of rice) makes for the
+          perfect beach meal.
+        </p>
+      </div>
 
-  
+      <div class="malasados">
+        <img
+          class="food-img"
+          src="https://i.huffpost.com/gen/2651830/thumbs/o-MALASADA-570.jpg"
+          alt="Malasados"
+        />
+        <header>Malasados</header>
+        <p class="food-desc">
+          Deep-fried balls of heaven coated in sugar. That's all you need to
+          know.
+        </p>
+      </div>
+
+      <div class="saimin">
+        <img
+          class="food-img"
+          src="https://i.huffpost.com/gen/2660898/thumbs/o-SAIMIN-570.jpg"
+          alt="Saimin"
+        />
+        <header>Saimin</header>
+        <p class="food-desc">
+          There's nothing more comforting than a piping hot bowl of noodles
+          after a long day of surfing. Saimin is Hawaii's version of classic
+          Asian noodle dishes, taking elements of Japanese, Chinese and Filipino
+          dishes to create a unique bowl of Hawaii. Saimin is basically the
+          culinary representation of Hawaii as a crossroads for culture.
+        </p>
+      </div>
+    </section>
 
     <script type="module" src="/main.js"></script>
   </body>

@@ -147,24 +147,30 @@
   display: block;
 }
 
-.fish {
+.attraction-img,
+.food-img {
   float: left;
   width: 55%;
   height: 70%;
   border: 5px solid black;
 }
 
-.parent {
+.attractions,
+.food {
   font-size: 1.3rem;
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
   text-align: center;
   flex-wrap: wrap;
-  padding-top: 10rem;
 }
 
-.child {
+.waikiki-beach,
+.uss-arizona,
+.manapua,
+.poke,
+.malasados,
+.saimin {
   width: 50rem;
   height: 30rem;
   border: 3px solid black;
@@ -173,6 +179,7 @@
   box-shadow: 4px 4px 8px;
   margin-bottom: 3em;
 }
-.adult {
+.attraction-desc,
+.food-desc {
   margin: 15px 7px 7px 7px;
 }
