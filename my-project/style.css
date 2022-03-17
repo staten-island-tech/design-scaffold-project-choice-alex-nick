@@ -226,6 +226,7 @@ html,
 .container {
   position: relative;
   display: none;
+  justify-content: center;
 }
 
 /* Expanding image text */
