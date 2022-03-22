@@ -25,8 +25,15 @@
         </div>
        
       </div>
-      <button class="color-change">Dark Mode</button>
+      <button class="color-change" onclick="darkMode()">Dark Mode</button>
     </div>
+
+    <script>
+      function darkMode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+    </script>
 
     <header
       class="
@@ -258,9 +265,7 @@
       expandImg.parentElement.style.display = "block";
     }
     </script>
-    
-  
-
+ 
     <script type="module" src="/main.js"></script>
   </body>
 </html>

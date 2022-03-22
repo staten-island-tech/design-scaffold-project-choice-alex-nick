@@ -267,3 +267,7 @@ html,
   cursor: pointer;
   border: 1px solid #555;
 }
+.dark-mode {
+  background-color: #0b0b45;
+  color: grey;
+}
