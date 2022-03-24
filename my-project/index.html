@@ -9,12 +9,14 @@
   </head>
 
   <body>
+    <span id="top"></span>
+    <div>
     <div class="navbar">
-      <a href="#header">Home</a>
+      <a href="#top">Home</a>
 
       <div class="dropdown">
         <button class="dropbtn">&#x2630
-          <i class="fa fa-caret-down"></i>
+          <i class="fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
           <a class="hovers pr-20" href="https://www.gohawaii.com/">Hawaii</a>
@@ -23,17 +25,9 @@
           <a class="hovers pr-20" href="#image gallery">Image Gallery</a>
           <a class="hovers pr-20" href="#map">Map</a>
         </div>
-       
       </div>
-      <button class="color-change" onclick="darkMode()">Dark Mode</button>
     </div>
-
-    <script>
-      function darkMode() {
-        var element = document.body;
-        element.classList.toggle("dark-mode");
-      }
-    </script>
+  </div>
 
     <header
       class="
@@ -62,6 +56,7 @@
       </div>
     </header>
     <section class=" m-auto flex flex-col justify-center items-center">
+      <span id="map"></span>
       <article>
         <h1 class="text-center mb-10 text-6xl underline mt-20">The Islands</h1>
         <iframe
@@ -104,7 +99,7 @@
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrLDSSTefCpf0zwMiNdjEkPUuY_2Nqc95C_w&usqp=CAU"
           alt="Waikiki beach"
         />
-        <header class="font-bold text-xl">Waikiki Beach and Diamond Head Monument</header>
+        <header>Waikiki Beach and Diamond Head Monument</header>
         <p class="attraction-desc">
           Waikiki, with its beautiful stretch of oceanfront beach, is Hawaii's
           biggest tourist attraction. A suburb of Honolulu, Waikiki is popular
@@ -121,8 +116,8 @@
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmnqOjrCDKJQsEA8Lj_Qliyw22DUe3hkQvHMGeyLP-hmB4J-sf_VoV2vAJfzx16K-dbxc&usqp=CAU"
           alt="USS Arizona"
         />
-        <header class="font-bold text-xl">Pearl Harbor and USS Arizona Memorial</header>
-        <p class="attraction-desc-2">
+        <header>Pearl Harbor and USS Arizona Memorial</header>
+        <p class="attraction-desc">
           Pearl Harbor is a National Historic Landmark and active military base
           that earned its place in history for the 1941 attack, which killed
           1,177 servicemen on the USS Arizona. The site is now home to several
@@ -136,10 +131,11 @@
       
         <div class="hanauma-bay">
           <img class="attraction-img" src="https://vagabondish.com/wp-content/uploads/sunrise-hanauma-bay-hawaii-11422103066.jpg" alt="Hanuama Bay">
-          <header class="font-bold text-xl" >Hanuama Bay Nature Preserve</header>
-      <p class="hanauma-desc">Formed within the crater of a volcano on the island of Oahu, Hanauma Bay is a unique protected bay, which has been popular with snorkelers for a long time. After overuse caused pollution and damage to the delicate reef ecosystem, restoration efforts have restored the bay to its original splendor, and it is again open to visitors.
+          <header>Hanuama Bay Nature Preserve</header>
+      <p class="attraction-desc">Formed within the crater of a volcano on the island of Oahu, Hanauma Bay is a unique protected bay, which has been popular with snorkelers for a long time. After overuse caused pollution and damage to the delicate reef ecosystem, restoration efforts have restored the bay to its original splendor, and it is again open to visitors.
       
-        The Hanauma Bay Education Center is a great place to learn about the bay, and there are several snorkeling rental shops that offer lessons, so that visitors can see the breathtaking reef system and its inhabitants up-close.</p>
+        The Hanauma Bay Education Center is a great place to learn about the bay, and there are several snorkeling rental shops that offer lessons, so that visitors can see the breathtaking reef system and its inhabitants up-close.
+      </p>
        
         </div>
      
@@ -155,7 +151,7 @@
           src="https://i.huffpost.com/gen/2651718/thumbs/o-MANAPUA-HAWAII-570.jpg"
           alt="Manapua"
         />
-        <header class="font-bold text-xl" >Manapua</header>
+        <header>Manapua</header>
         <p class="food-desc">
           Steamed or baked manapua? Ask any Hawaii local this question and
           you're guaranteed a passionate response. These pillowy buns are a
@@ -171,7 +167,7 @@
           src="https://i.huffpost.com/gen/2651652/thumbs/o-POKE-FISH-570.jpg"
           alt="Poke"
         />
-        <header class="font-bold text-xl" >Poke</header>
+        <header>Poke</header>
         <p class="food-desc">
           Ridiculously fresh, raw seafood marinated in the sauce of your
           choosing. The most popular variety is ahi poke, which is made with
@@ -194,7 +190,7 @@
           src="https://i.huffpost.com/gen/2651830/thumbs/o-MALASADA-570.jpg"
           alt="Malasados"
         />
-        <header class="font-bold text-xl" >Malasados</header>
+        <header>Malasados</header>
         <p class="food-desc">
           Deep-fried balls of heaven coated in sugar. That's all you need to
           know.
@@ -207,7 +203,7 @@
           src="https://i.huffpost.com/gen/2660898/thumbs/o-SAIMIN-570.jpg"
           alt="Saimin"
         />
-        <header class="font-bold text-xl" >Saimin</header>
+        <header>Saimin</header>
         <p class="food-desc">
           There's nothing more comforting than a piping hot bowl of noodles
           after a long day of surfing. Saimin is Hawaii's version of classic
@@ -217,41 +213,44 @@
         </p>
       </div>
     </section>
+
+
+    <span id="image gallery"></span>
     <div class="text-center mt-20 text-3xl">
       <h2>Tabbed Image Gallery</h2>
       <p>Click on the images below:</p>
     </div>
     
   
-    <div class="row">
+    <div class="row m-auto flex justify-center items-center">
       <div class="column">
         <img class="gallery" src="https://cdn.wallpapersafari.com/59/98/3147XT.jpg" alt="Nature"  onclick="myFunction(this);">
       </div>
       <div class="column">
-        <img class="gallery" src="https://media.istockphoto.com/photos/hawaiian-green-sea-turtle-picture-id1132394047?k=20&m=1132394047&s=612x612&w=0&h=gQ0yjHLW0JTzCU0HjHQ1h6z_IH4HB3YkHdJXigr8D_8=" alt="Snow"  onclick="myFunction(this);">
+        <img class="gallery" src="https://media.istockphoto.com/photos/hawaiian-green-sea-turtle-picture-id1132394047?k=20&m=1132394047&s=612x612&w=0&h=gQ0yjHLW0JTzCU0HjHQ1h6z_IH4HB3YkHdJXigr8D_8=" alt="Wildlife"  onclick="myFunction(this);">
       </div>
       <div class="column">
-        <img class="gallery" src="https://mcdn.wallpapersafari.com/medium/23/86/Yesftk.jpg" alt="Mountains" onclick="myFunction(this);">
+        <img class="gallery" src="https://mcdn.wallpapersafari.com/medium/23/86/Yesftk.jpg" alt="Waikiki" onclick="myFunction(this);">
       </div>
       <div class="column">
-        <img class="gallery" src="https://mcdn.wallpapersafari.com/medium/8/35/zJfvnt.jpg" alt="Lights"  onclick="myFunction(this);">
+        <img class="gallery" src="https://mcdn.wallpapersafari.com/medium/8/35/zJfvnt.jpg" alt="Ocean"  onclick="myFunction(this);">
       </div>
       <div class="column">
-        <img class="gallery" src="https://mcdn.wallpapersafari.com/medium/18/95/7WCvN4.jpg" alt="Mountains"  onclick="myFunction(this);">
+        <img class="gallery" src="https://mcdn.wallpapersafari.com/medium/18/95/7WCvN4.jpg" alt="Sunset"  onclick="myFunction(this);">
       </div>
       <div class="column">
-        <img class="gallery" src="https://mcdn.wallpapersafari.com/medium/51/73/SNM2FX.jpg" alt="Mountains"  onclick="myFunction(this);">
+        <img class="gallery" src="https://media.istockphoto.com/photos/aerial-of-waipio-bay-and-valley-in-big-island-hawaii-picture-id1319432057?k=20&m=1319432057&s=612x612&w=0&h=yIhpBc81DXz-RjUM6cj7-zvS1J09DTAGc8bcKrdBS8Q=" alt="Mountains"  onclick="myFunction(this);">
       </div>
       <div class="column">
-        <img class="gallery" src="https://media.istockphoto.com/photos/where-coconuts-grow-picture-id117211856?k=20&m=117211856&s=612x612&w=0&h=mZeFLqR5eP42Kuql6MNNE6qksYHt9g6ufoU4_djflao=" alt="Mountains"  onclick="myFunction(this);">
+        <img class="gallery" src="https://media.istockphoto.com/photos/where-coconuts-grow-picture-id117211856?k=20&m=117211856&s=612x612&w=0&h=mZeFLqR5eP42Kuql6MNNE6qksYHt9g6ufoU4_djflao=" alt="Landscape"  onclick="myFunction(this);">
       </div>
       <div class="column">
-        <img class="gallery" src="https://mcdn.wallpapersafari.com/medium/53/61/T0kXFA.jpg" alt="Mountains"  onclick="myFunction(this);">
+        <img class="gallery" src="https://mcdn.wallpapersafari.com/medium/53/61/T0kXFA.jpg" alt="Fish"  onclick="myFunction(this);">
       </div>
     </div>
     
-    <div class="container ">
-      <span onclick="this.parentElement. style.display='none'" class="closebtn">&times;</span>
+    <div class="container m-auto flex flex-col justify-center items-center py-28 ">
+      <span onclick="this.parentElement. style.display='none'" class="closebtn text-black">&times;</span>
       <img class="block mx-auto w-3/6"  id="expandedImg" >
       <div id="imgtext"></div>
     </div>
@@ -265,7 +264,8 @@
       expandImg.parentElement.style.display = "block";
     }
     </script>
- 
+    
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
