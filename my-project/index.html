@@ -10,7 +10,6 @@
 
   <body>
     <span id="top"></span>
-    <div>
     <div class="navbar">
       <a href="#top">Home</a>
 
@@ -23,13 +22,36 @@
           <a class="hovers pr-20" href="#attractions">Attractions</a>
           <a class="hovers pr-20" href="#food">Food</a>
           <a class="hovers pr-20" href="#image gallery">Image Gallery</a>
+          <a class="hovers pr-20" onclick="darkMode()">Dark Mode</a>
+          <button id="clickme" onclick="changeImage();">Click to change image!</button>
+     
           <a class="hovers pr-20" href="#map">Map</a>
         </div>
       </div>
     </div>
-  </div>
+
+
+    <script>
+      function darkMode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+    </script>
+
+
+<script>
+
+function changeImage()
+{
+var img = document.getElementById("hoodie");
+img.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLNkrny3PkUiuUGCWmsdNsGHE1h4jnmG8Pug&usqp=CAU";
+return true;
+}
+</script>
+
 
     <header
+    id="hoodie"
       class="
         flex
         items-center
@@ -37,7 +59,6 @@
         h-screen
         mb-12
         bg-fixed bg-center bg-cover
-        custom-img
       "
     >
       <div
@@ -59,8 +80,8 @@
       <span id="map"></span>
       <article>
         <h1 class="text-center mb-10 text-6xl underline mt-20">The Islands</h1>
-        <iframe
-          class="flex items-center"
+        <iframe id="myImage"
+          class="myImage flex items-center"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2277070.173200597!2d-157.61467583837666!3d20.39093593694192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7bffdb064f79e005%3A0x4b7782d274cc8628!2sHawaii!5e0!3m2!1sen!2sus!4v1646419388668!5m2!1sen!2sus"
           width="600"
           height="450"

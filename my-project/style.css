@@ -16,6 +16,10 @@ html,
   box-sizing: border-box;
   font-family: "Satisfy", cursive;
 }
+.dark-mode {
+  background-color: #0b0b45;
+  color: grey;
+}
 
 .parallax {
   background-image: url("https://cdn.travelpulse.com/images/54aaedf4-a957-df11-b491-006073e71405/ee952e9e-f09c-49c2-bc5d-4303c880173a/630x355.jpg");
@@ -39,6 +43,7 @@ html,
   transition-property: color;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  font-family: "myFont";
 }
 .header:before {
   content: "";
@@ -165,7 +170,7 @@ html,
 
 .attractions,
 .food {
-  font-size: 1.3rem;
+  font-size: large;
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
@@ -187,10 +192,18 @@ html,
   background-color: lightgray;
   box-shadow: 4px 4px 8px;
   margin-bottom: 3em;
+  font-size: large;
 }
 .attraction-desc,
 .food-desc {
   margin: 15px 7px 7px 7px;
+  font-size: 1.4rem;
+}
+.attraction-desc-2 {
+  font-size: 1.3rem;
+}
+.hanauma-desc {
+  font-size: 1.3rem;
 }
 
 /* The grid: Four equal columns that floats next to each other */
