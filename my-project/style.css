@@ -294,6 +294,15 @@ body {
   list-style-type: none;
 }
 
+.cards-2 {
+  display: grid;
+  grid-template-columns: 450px 450px 450px;
+  gap: 2rem;
+  margin: 4rem 5vw;
+  padding: 0;
+  list-style-type: none;
+}
+
 .card {
   position: relative;
   display: block;
