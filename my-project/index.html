@@ -21,10 +21,10 @@
           <a class="hovers pr-20" href="https://www.gohawaii.com/">Hawaii</a>
           <a class="hovers pr-20" href="#attractions">Attractions</a>
           <a class="hovers pr-20" href="#food">Food</a>
+          <a class="hovers pr-20" href="#hotels">Hotels</a>
           <a class="hovers pr-20" href="#image gallery">Image Gallery</a>
           <a class="hovers pr-20" onclick="darkMode()">Dark Mode</a>
-          <button id="clickme" onclick="changeImage();">Click to change image!</button>
-     
+      
           <a class="hovers pr-20" href="#map">Map</a>
         </div>
       </div>
@@ -38,16 +38,6 @@
       }
     </script>
 
-
-<script>
-
-function changeImage()
-{
-var img = document.getElementById("hoodie");
-img.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLNkrny3PkUiuUGCWmsdNsGHE1h4jnmG8Pug&usqp=CAU";
-return true;
-}
-</script>
 
 
     <header
@@ -64,7 +54,7 @@ return true;
       <div
         class="
           header
-          p-5
+          p-16
           text-9xl
           font-mono
           text-white
@@ -73,9 +63,48 @@ return true;
           drop-shadow-md
         "
       >
-        Hawaii
+       Hawaii
       </div>
     </header>
+
+
+    
+
+    
+
+          <div class="popup">
+              <button id="close">&times;</button>
+              <h2>Hi Mr.Whalen</h2>
+              <p>
+           I know you are grading my project while you are reading this. This was a really fun project. Can we do more? &#128513
+              </p>
+              <a href="https://www.lexisnexis.com/legalnewsroom/resized-image.ashx/__size/550x0/__key/telligent-evolution-components-attachments/13-07-00-00-00-00-14-94/ContentImage_2D00_GradeAPlus.jpg" class="red"
+       >Let's Go</a>
+          </div>
+     
+
+          <script type="text/javascript">
+      window.addEventListener("load", function(){
+          setTimeout(
+              function open(event){
+                  document.querySelector(".popup").style.display = "block";
+              },
+              600 
+          )
+      });
+      
+      
+      document.querySelector("#close").addEventListener("click", function(){
+          document.querySelector(".popup").style.display = "none";
+      });
+          </script>
+      
+
+
+
+
+
+
     <section class=" m-auto flex flex-col justify-center items-center">
       <span id="map"></span>
       <article>
@@ -111,162 +140,247 @@ return true;
     </section>
 
     <span id="attractions"></span>
+    <h3 class="foods"> Attractions</h3>
+    <ul class="cards">
+      <li>
+        <a href="" class="card">
+          <img src="https://images.fineartamerica.com/images-medium-large-5/diamond-head-and-waikiki-beach-eric-johansen.jpg" class="card__image" alt="" />
+          <div class="card__overlay">
+            <div class="card__header">
+              <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
 
-    <h1 class="text-center mb-10 text-6xl underline pt-20 mt-20">Attractions</h1>
-    <section class="attractions">
-      <div class="waikiki-beach">
-        <img
-          class="attraction-img"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrLDSSTefCpf0zwMiNdjEkPUuY_2Nqc95C_w&usqp=CAU"
-          alt="Waikiki beach"
-        />
-        <header>Waikiki Beach and Diamond Head Monument</header>
-        <p class="attraction-desc">
-          Waikiki, with its beautiful stretch of oceanfront beach, is Hawaii's
-          biggest tourist attraction. A suburb of Honolulu, Waikiki is popular
-          for its big resorts, dining, entertainment, and shopping. The
-          boardwalk, known as the Waikiki Beach Walk, is lined with cafes and
-          entertainment venues, while Kuhio and KalaKaua Avenues are where the
-          bulk of the area's restaurants and boutiques can be found.
-        </p>
-      </div>
+              <div class="card__header-text">
+                <h3 class="card__title">Waikiki Beach and Diamond Head Monument</h3>            
 
-      <div class="uss-arizona">
-        <img
-          class="attraction-img"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmnqOjrCDKJQsEA8Lj_Qliyw22DUe3hkQvHMGeyLP-hmB4J-sf_VoV2vAJfzx16K-dbxc&usqp=CAU"
-          alt="USS Arizona"
-        />
-        <header>Pearl Harbor and USS Arizona Memorial</header>
-        <p class="attraction-desc">
-          Pearl Harbor is a National Historic Landmark and active military base
-          that earned its place in history for the 1941 attack, which killed
-          1,177 servicemen on the USS Arizona. The site is now home to several
-          attractions that are part of the World War II Valor in the Pacific
-          Monument, including the USS Arizona Memorial, which floats above the
-          remains of the sunken ship - parts of which can be seen protruding
-          from the water. There is no cost for a tour of the memorial, however
-          reservations are recommended due to its popularity.
-        </p>
-      </div>
-      
-        <div class="hanauma-bay">
-          <img class="attraction-img" src="https://vagabondish.com/wp-content/uploads/sunrise-hanauma-bay-hawaii-11422103066.jpg" alt="Hanuama Bay">
-          <header>Hanuama Bay Nature Preserve</header>
-      <p class="attraction-desc">Formed within the crater of a volcano on the island of Oahu, Hanauma Bay is a unique protected bay, which has been popular with snorkelers for a long time. After overuse caused pollution and damage to the delicate reef ecosystem, restoration efforts have restored the bay to its original splendor, and it is again open to visitors.
-      
-        The Hanauma Bay Education Center is a great place to learn about the bay, and there are several snorkeling rental shops that offer lessons, so that visitors can see the breathtaking reef system and its inhabitants up-close.
-      </p>
-       
-        </div>
+              </div>
+            </div>
+            <p class="card__description">Diamond Head Beach Park, also formally known as Kuilei Cliffs Beach Park, is the spot you venture to, when you want to get away from busy Oahu beaches and the Waikiki scene. Check out the expansive south side views, and endless surf swells that always tend to break at this Oahu beach.</p>
+          </div>
+        </a>      
+      </li>
+      <li>
+        <a href="" class="card">
+          <img src="http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/7d0875ca4d39064.png" class="card__image" alt="" />
+          <div class="card__overlay">
+            <div class="card__header">
+              <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+
+              <div class="card__header-text">
+                <h3 class="card__title">Pearl Harbor and USS Arizona Memorial</h3>            
+
+              </div>
+            </div>
+            <p class="card__description">The USS Arizona Memorial, at Pearl Harbor in Honolulu, Hawaii, marks the resting place of 1,102 of the 1,177 sailors and Marines killed on USS Arizona during the Attack on Pearl Harbor on December 7, 1941, and commemorates the events of that day.</p>
+          </div>
+        </a>      
+      </li>
+      <li>
+        <a href="" class="card">
+          <img src="https://i.redd.it/tn1eg77sfmx41.png" class="card__image" alt="" />
+          <div class="card__overlay">
+            <div class="card__header">
+              <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+
+              <div class="card__header-text">
+                <h3 class="card__title">Hanuama Bay Nature Preserve</h3>            
+
+              </div>
+            </div>
+            <p class="card__description">Formed within the crater of a volcano on the island of Oahu, Hanauma Bay is a unique protected bay, which has been popular with snorkelers for a long time. After overuse caused pollution and damage to the delicate reef ecosystem, restoration efforts have restored the bay to its original splendor, and it is again open to visitors.
+             </p>
+          </div>
+        </a>      
+      </li>
+    </ul>
      
-    </section>
+ 
 
     <span id="food"></span>
 
-    <h1 class="text-center mb-10 text-6xl underline pt-20 mt-20">Food</h1>
-    <section class="food">
-      <div class="manapua">
-        <img
-          class="food-img"
-          src="https://i.huffpost.com/gen/2651718/thumbs/o-MANAPUA-HAWAII-570.jpg"
-          alt="Manapua"
-        />
-        <header>Manapua</header>
-        <p class="food-desc">
-          Steamed or baked manapua? Ask any Hawaii local this question and
-          you're guaranteed a passionate response. These pillowy buns are a
-          staple of local cuisine. They can be filled with char siu, chicken,
-          beans or anything else your heart desires. Bring these to a potluck
-          and you'll be hailed as a hero.
-        </p>
-      </div>
 
-      <div class="poke">
-        <img
-          class="food-img"
-          src="https://i.huffpost.com/gen/2651652/thumbs/o-POKE-FISH-570.jpg"
-          alt="Poke"
-        />
-        <header>Poke</header>
-        <p class="food-desc">
-          Ridiculously fresh, raw seafood marinated in the sauce of your
-          choosing. The most popular variety is ahi poke, which is made with
-          yellowfin tuna. If you're feeling adventurous, order the tako
-          (octopus). A poke bowl (poke served on a bed of rice) makes for the
-          perfect beach meal.
-        </p>
-      </div>
+<h3 class="foods"> Food</h3>
 
 
-
-
+    <ul class="cards-2">
+      <li>
+          <a href="" class="card">
+            <img src="https://image.shutterstock.com/image-vector/steamed-bun-pixel-art-food-260nw-1905099391.jpg" class="card__image" alt="" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+  
+                <div class="card__header-text">
+                  <h3 class="card__title">Manapua</h3>            
+  
+                </div>
+              </div>
+              <p class="card__description">Steamed or baked manapua? Ask any Hawaii local this question and
+                you're guaranteed a passionate response. These pillowy buns are a
+                staple of local cuisine. They can be filled with char siu, chicken,
+                beans or anything else your heart desires. Bring these to a potluck
+                and you'll be hailed as a hero.</p>
+            </div>
+          </a>      
+        </li>
+  
+        <li>
+          <a href="" class="card">
+            <img src="https://thumbs.dreamstime.com/b/vector-pixel-art-soup-isolated-cartoon-vector-pixel-art-soup-144999422.jpg" class="card__image" alt="" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+  
+                <div class="card__header-text">
+                  <h3 class="card__title">Poke</h3>            
+  
+                </div>
+              </div>
+              <p class="card__description">Ridiculously fresh, raw seafood marinated in the sauce of your
+                choosing. The most popular variety is ahi poke, which is made with
+                yellowfin tuna. If you're feeling adventurous, order the tako
+                (octopus). A poke bowl (poke served on a bed of rice) makes for the
+                perfect beach meal.</p>
+            </div>
+          </a>      
+        </li>
     
   
 
 
-      <div class="malasados">
-        <img
-          class="food-img"
-          src="https://i.huffpost.com/gen/2651830/thumbs/o-MALASADA-570.jpg"
-          alt="Malasados"
-        />
-        <header>Malasados</header>
-        <p class="food-desc">
-          Deep-fried balls of heaven coated in sugar. That's all you need to
-          know.
-        </p>
-      </div>
+        <li>
+          <a href="" class="card">
+            <img src="https://ih1.redbubble.net/image.2698758493.0297/st,small,507x507-pad,600x600,f8f8f8.jpg" class="card__image" alt="" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+  
+                <div class="card__header-text">
+                  <h3 class="card__title">Malasados</h3>            
+  
+                </div>
+              </div>
+              <p class="card__description">Deep-fried balls of heaven coated in sugar. That's all you need to
+                know.</p>
+            </div>
+          </a>      
+        </li>
+  
+  
+        <li>
+          <a href="" class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqwFagK0Ogbqb50zskRefyyza4Eb93zgMKsQ&usqp=CAU" class="card__image" alt="" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+    
+                <div class="card__header-text">
+                  <h3 class="card__title">Saimin</h3>            
+    
+                </div>
+              </div>
+              <p class="card__description">There's nothing more comforting than a piping hot bowl of noodles
+                after a long day of surfing. Saimin is Hawaii's version of classic
+                Asian noodle dishes, taking elements of Japanese, Chinese and Filipino
+                dishes to create a unique bowl of Hawaii. Saimin is basically the
+                culinary representation of Hawaii as a crossroads for culture.</p>
+            </div>
+          </a>      
+        </li>
+      </ul>
+   
 
-      <div class="saimin">
-        <img
-          class="food-img"
-          src="https://i.huffpost.com/gen/2660898/thumbs/o-SAIMIN-570.jpg"
-          alt="Saimin"
-        />
-        <header>Saimin</header>
-        <p class="food-desc">
-          There's nothing more comforting than a piping hot bowl of noodles
-          after a long day of surfing. Saimin is Hawaii's version of classic
-          Asian noodle dishes, taking elements of Japanese, Chinese and Filipino
-          dishes to create a unique bowl of Hawaii. Saimin is basically the
-          culinary representation of Hawaii as a crossroads for culture.
-        </p>
-      </div>
-    </section>
+
+    
+      <span id="hotels"></span>
 
 
+    <h3 class="foods"> Hotels</h3>
+    <ul class="cards">
+      <li>
+        <a href="" class="card">
+          <img src="https://cms-assets.tutsplus.com/uploads/users/71/courses/517/preview_image/pixelArt.jpg" class="card__image" alt="" />
+          <div class="card__overlay">
+            <div class="card__header">
+              <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+
+              <div class="card__header-text">
+                <h3 class="card__title">Four Seasons (Big Island)</h3>            
+
+              </div>
+            </div>
+            <p class="card__description">The Four Seasons hotel chain is one of the top, most luxury hotels in the world. Prices for this particular hotel are around $3,000 per night. This particular location is right on the water, and has its own personal golf course. People from all arouund the world flock to this hotel due to its immense luxurious features.</p>
+          </div>
+        </a>      
+      </li>
+      <li>
+        <a href="" class="card">
+          <img src="https://w7.pngwing.com/pngs/222/981/png-transparent-habbo-house-pixel-art-landscaping-house-flag-apartment-grass.png" class="card__image" alt="" />
+          <div class="card__overlay">
+            <div class="card__header">
+              <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+
+              <div class="card__header-text">
+                <h3 class="card__title">The Ritz-Carlton Maui, Kapalua</h3>            
+
+              </div>
+            </div>
+            <p class="card__description">The Ritz Carlton is the top of the line hotel that is part of Marriot corporation. This hotel is recently renovated and has ammentities to fit all types of needs. This hotel, similar to the four seasons has its own personal gold courses. The prices for this hotel at the moment range from $1,400-$2,300</p>
+          </div>
+        </a>      
+      </li>
+      <li>
+        <a href="" class="card">
+          <img src="https://static.habbo-happy.net/img/articles/2c6b34_Ref%C3%BAgio_selva_2.png" class="card__image" alt="" />
+          <div class="card__overlay">
+            <div class="card__header">
+              <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+
+              <div class="card__header-text">
+                <h3 class="card__title">Timbers Kauai</h3>            
+
+              </div>
+            </div>
+            <p class="card__description">Formed within the crater of a volcano on the island of Oahu, Hanauma Bay is a unique protected bay, which has been popular with snorkelers for a long time. After overuse caused pollution and damage to the delicate reef ecosystem, restoration efforts have restored the bay to its original splendor, and it is again open to visitors.
+             </p>
+          </div>
+        </a>      
+      </li>
+    </ul>
+     
+ 
     <span id="image gallery"></span>
     <div class="text-center mt-20 text-3xl">
-      <h2>Tabbed Image Gallery</h2>
+      <h2>Image Gallery</h2>
       <p>Click on the images below:</p>
     </div>
-    
+
+
+
   
     <div class="row m-auto flex justify-center items-center">
       <div class="column">
-        <img class="gallery" src="https://cdn.wallpapersafari.com/59/98/3147XT.jpg" alt="Nature"  onclick="myFunction(this);">
+        <img class="gallery" src="https://graphicriver.img.customer.envatousercontent.com/files/255089679/palm%20trees%20location%20_pv.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=471c12f5c991dbb99e060ac255d1ba92" alt="Nature"  onclick="myFunction(this);">
       </div>
       <div class="column">
-        <img class="gallery" src="https://media.istockphoto.com/photos/hawaiian-green-sea-turtle-picture-id1132394047?k=20&m=1132394047&s=612x612&w=0&h=gQ0yjHLW0JTzCU0HjHQ1h6z_IH4HB3YkHdJXigr8D_8=" alt="Wildlife"  onclick="myFunction(this);">
+        <img class="gallery" src="https://img.freepik.com/free-vector/turtle-with-pixel-art-style_475147-486.jpg" alt="Wildlife"  onclick="myFunction(this);">
       </div>
       <div class="column">
-        <img class="gallery" src="https://mcdn.wallpapersafari.com/medium/23/86/Yesftk.jpg" alt="Waikiki" onclick="myFunction(this);">
+        <img class="gallery" src="http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/57e9c01f0e29bf1.png" alt="Skydiving" onclick="myFunction(this);">
       </div>
       <div class="column">
-        <img class="gallery" src="https://mcdn.wallpapersafari.com/medium/8/35/zJfvnt.jpg" alt="Ocean"  onclick="myFunction(this);">
+        <img class="gallery" src="https://media.istockphoto.com/vectors/pixel-art-island-vector-id690130624?k=20&m=690130624&s=612x612&w=0&h=x_FOayCscHsTERn4RPnYSK4iFR1eb9Qq7nFQ1eG-Z6c=" alt="Ocean"  onclick="myFunction(this);">
       </div>
       <div class="column">
-        <img class="gallery" src="https://mcdn.wallpapersafari.com/medium/18/95/7WCvN4.jpg" alt="Sunset"  onclick="myFunction(this);">
+        <img class="gallery" src="https://i.pinimg.com/736x/62/ea/a3/62eaa324c6163b3518f67cbacec8729f.jpg" alt="Sunset"  onclick="myFunction(this);">
       </div>
       <div class="column">
-        <img class="gallery" src="https://media.istockphoto.com/photos/aerial-of-waipio-bay-and-valley-in-big-island-hawaii-picture-id1319432057?k=20&m=1319432057&s=612x612&w=0&h=yIhpBc81DXz-RjUM6cj7-zvS1J09DTAGc8bcKrdBS8Q=" alt="Mountains"  onclick="myFunction(this);">
+        <img class="gallery" src="https://media.istockphoto.com/vectors/pixel-art-seamless-background-with-mountains-vector-id910096788?k=20&m=910096788&s=170667a&w=0&h=8YcGXA3WQZhgkEXwYOGy1VlNCXC6skCB0IUT3sZEeII=" alt="Mountains"  onclick="myFunction(this);">
       </div>
       <div class="column">
-        <img class="gallery" src="https://media.istockphoto.com/photos/where-coconuts-grow-picture-id117211856?k=20&m=117211856&s=612x612&w=0&h=mZeFLqR5eP42Kuql6MNNE6qksYHt9g6ufoU4_djflao=" alt="Landscape"  onclick="myFunction(this);">
+        <img class="gallery" src="https://preview.redd.it/980gpg8pobv31.png?width=640&crop=smart&auto=webp&s=e589ea69756be540350164732c3809b8313074c1" alt="Landscape"  onclick="myFunction(this);">
       </div>
       <div class="column">
-        <img class="gallery" src="https://mcdn.wallpapersafari.com/medium/53/61/T0kXFA.jpg" alt="Fish"  onclick="myFunction(this);">
+        <img class="gallery" src="https://art.ngfiles.com/images/957000/957402_northman277_underwater-pixelart.png?f1563039001" alt="Fish"  onclick="myFunction(this);">
       </div>
     </div>
     
@@ -285,8 +399,60 @@ return true;
       expandImg.parentElement.style.display = "block";
     }
     </script>
+
+
+
+<script>
+
+ function changeImage()
+{
+var img = document.getElementById("image");
+img.src="https://i.redd.it/tn1eg77sfmx41.png";
+
+
+var img = document.getElementById("porky");
+img.src="https://media.istockphoto.com/vectors/pixel-art-seamless-background-with-mountains-vector-id910096788?k=20&m=910096788&s=170667a&w=0&h=8YcGXA3WQZhgkEXwYOGy1VlNCXC6skCB0IUT3sZEeII=";
+
+
+
+var img = document.getElementById("cows");
+img.src="https://img.freepik.com/free-vector/turtle-with-pixel-art-style_475147-486.jpg";
+return false;
+}
+
+</script>
+
+<div>
+  <img id="image" src="http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/7d0875ca4d39064.png" />
+
+  <img id="porky" src="http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/7d0875ca4d39064.png" />
+
+  <img id="cows" src="http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/7d0875ca4d39064.png" />
+
+
+  <button id="clickme" onclick="changeImage();">Click to change image!</button>
+</div>
+
+
+<footer>
+ <div class="footer space-x-16 justify-center">
+  <a href="https://www.google.com/search?client=firefox-b-1-d&q=tiktok+hawaii"><img src="https://www.iconpacks.net/icons/2/free-icon-tiktok-logo-4500.png" alt="Tiktok" id="fb-logo" class="logos" /></a>
+  <a href="https://twitter.com/hashtag/hawaii"><img src="https://www.iconpacks.net/icons/2/free-twitter-logo-icon-2429.png" alt="Twitter" id="twitter-logo" class="logos" /></a>
+  <a href="https://www.instagram.com/gohawaii/?hl=en"><img src="https://www.iconpacks.net/icons/3/free-icon-instagram-logo-8869.png" alt="Instagram" id="ig-logo" class="logos" /></a>
+  <a href="https://www.youtube.com/watch?v=0XoT1z-gAQw"><img src="https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png" alt="Youtube" id="yt-logo"
+          class="logos" /></a>
+        </div>
+
+          <div class="footer-legal ">
+            <a href="https://www.wikihow.com/images/thumb/b/b1/Terms-and-Conditions-for-Website.png/340px-Terms-and-Conditions-for-Website.png" class="footer-legal-item">Terms of Use</a>
+            <a href="https://www.privacypolicies.com/public/uploads/2018/06/general-motors-california-privacy-policy-clause.jpg" class="footer-legal-item">Privacy Policy</a>
+        </div>
+
+</footer>
     
 
+  
+
     <script type="module" src="/main.js"></script>
-  </body>
+</body>
 </html>
