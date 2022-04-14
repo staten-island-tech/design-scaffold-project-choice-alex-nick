@@ -8,7 +8,7 @@
     <title>Vite App</title>
   </head>
 
-  <body>
+  <body id="posts">
     <span id="top"></span>
     <div class="navbar">
       <a href="#top">Home</a>
@@ -18,18 +18,17 @@
           <i class="fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-          <a class="hovers pr-20" href="https://www.gohawaii.com/">Hawaii</a>
+  
           <a class="hovers pr-20" href="#attractions">Attractions</a>
           <a class="hovers pr-20" href="#food">Food</a>
           <a class="hovers pr-20" href="#hotels">Hotels</a>
           <a class="hovers pr-20" href="#image gallery">Image Gallery</a>
           <a class="hovers pr-20" onclick="darkMode()">Dark Mode</a>
-      
+          <a class="hovers pr-20" onclick="changeImage()">Real life</a>
           <a class="hovers pr-20" href="#map">Map</a>
         </div>
       </div>
     </div>
-
 
     <script>
       function darkMode() {
@@ -40,9 +39,10 @@
 
 
 
+
     <header
     id="hoodie"
-      class="
+      class=" days
         flex
         items-center
         justify-center
@@ -89,7 +89,7 @@
               function open(event){
                   document.querySelector(".popup").style.display = "block";
               },
-              600 
+              1500 
           )
       });
       
@@ -139,12 +139,99 @@
       </p>
     </section>
 
+
+
+    <script>
+
+      function changeImage()
+     {
+      var fon = document.getElementById("posts");
+    if (fon.style.fontFamily == "Common Pixel") {
+        fon.style.font = "Times New Roman";
+    }
+    
+
+  
+     var img = document.getElementById("uno");
+     img.src="https://a.cdn-hotels.com/gdcs/production89/d1001/2e2f2638-33ce-4919-afcf-42ad381e2ac8.jpg";
+     
+     
+     var img = document.getElementById("dos");
+     img.src="https://upload.wikimedia.org/wikipedia/commons/c/c3/USS_Arizona_Memorial_%28aerial_view%29.jpg";
+     
+     
+     
+     var img = document.getElementById("tres");
+     img.src="https://www.tripsavvy.com/thmb/ynfH8bkGxbPYOgfcbzw4rpq9J5M=/2121x1193/smart/filters:no_upscale()/GettyImages-508353899-b340a9d326ba48d5a0256987cd08578c.jpg";
+     
+     var img = document.getElementById("quatro");
+     img.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7DWLLk1Ctmjcx_E6OxsBkkBPe378jE1CMXw&usqp=CAU";
+
+     var img = document.getElementById("cinco");
+     img.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbj6fid9sD5I3cOPbkrtxNpchTB0g08nkISw&usqp=CAU";
+
+     var img = document.getElementById("seis");
+     img.src="https://tastykitchen.com/recipes/wp-content/uploads/sites/2/2010/02/Malasadas.JPG";
+
+
+     var img = document.getElementById("siete");
+     img.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScaBcIwdSwrgoTchgKTskuCUi9DHMFVOC4EA&usqp=CAU";
+
+
+     var img = document.getElementById("ocho");
+     img.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGRbuxsiWvvMiLtEsrDIVrMwpuRo4jvDvzrQ&usqp=CAU";
+
+     
+     var img = document.getElementById("nuevo");
+     img.src="https://s7d2.scene7.com/is/image/ritzcarlton/jhmrz-oasis-50759290";
+
+     
+     var img = document.getElementById("tencent");
+     img.src="https://wpcdn.us-east-1.vip.tn-cloud.net/www.hawaiimagazine.com/content/uploads/2020/12/SrQbkfw9_0.jpeg";
+
+     var img = document.getElementById("tencent1");
+     img.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSFYVsnTXHwyiFYqXOt4QqdZEvXmXuzQAO3Q&usqp=CAU";
+
+     var img = document.getElementById("tencent2");
+     img.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeXlLORBSj1d5RPxu9ldFqQ3n0gOkI9Zlf0w&usqp=CAU";
+
+     var img = document.getElementById("tencent3");
+     img.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ16jY2V84g4PIYjOD5cIOpW3JrDSRiBK8hzQ&usqp=CAU";
+     
+     var img = document.getElementById("tencent4");
+     img.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnjy2rNuhxugwBjMw65WNnGzfMUZc5h-PhxA&usqp=CAU";
+
+     var img = document.getElementById("tencent5");
+     img.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNNotxUkeGbRUMdnX5jZfxE5wrndI17461Cw&usqp=CAU";
+
+     var img = document.getElementById("tencent6");
+     img.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBNAh4P7UxDE993dsYKSn8zsY1JOMxYvqIkQ&usqp=CAU";
+
+     var img = document.getElementById("tencent7");
+     img.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQW0beS9OOlZZ96xpZs0vUFuV4hSEfjzdnKA&usqp=CAU";
+
+     var img = document.getElementById("tencent8");
+     img.src="https://gdb.voanews.com/BE9E9C0B-EAB1-44FB-BFD6-1B5EEE13F8DC_cx0_cy1_cw0_w1200_r1.jpg";
+
+     return false;
+
+
+  
+     }
+     
+     </script>
+     
+     
+     
+      
+
+
     <span id="attractions"></span>
     <h3 class="foods"> Attractions</h3>
     <ul class="cards">
       <li>
         <a href="" class="card">
-          <img src="https://images.fineartamerica.com/images-medium-large-5/diamond-head-and-waikiki-beach-eric-johansen.jpg" class="card__image" alt="" />
+          <img id="uno" src="https://images.fineartamerica.com/images-medium-large-5/diamond-head-and-waikiki-beach-eric-johansen.jpg" class="card__image" alt="" />
           <div class="card__overlay">
             <div class="card__header">
               <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
@@ -160,7 +247,7 @@
       </li>
       <li>
         <a href="" class="card">
-          <img src="http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/7d0875ca4d39064.png" class="card__image" alt="" />
+          <img id="dos" src="http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/7d0875ca4d39064.png" class="card__image" alt="" />
           <div class="card__overlay">
             <div class="card__header">
               <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
@@ -176,7 +263,7 @@
       </li>
       <li>
         <a href="" class="card">
-          <img src="https://i.redd.it/tn1eg77sfmx41.png" class="card__image" alt="" />
+          <img id="tres" src="https://i.redd.it/tn1eg77sfmx41.png" class="card__image" alt="" />
           <div class="card__overlay">
             <div class="card__header">
               <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
@@ -204,7 +291,7 @@
     <ul class="cards-2">
       <li>
           <a href="" class="card">
-            <img src="https://image.shutterstock.com/image-vector/steamed-bun-pixel-art-food-260nw-1905099391.jpg" class="card__image" alt="" />
+            <img id="quatro" src="https://image.shutterstock.com/image-vector/steamed-bun-pixel-art-food-260nw-1905099391.jpg" class="card__image" alt="" />
             <div class="card__overlay">
               <div class="card__header">
                 <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
@@ -225,7 +312,7 @@
   
         <li>
           <a href="" class="card">
-            <img src="https://thumbs.dreamstime.com/b/vector-pixel-art-soup-isolated-cartoon-vector-pixel-art-soup-144999422.jpg" class="card__image" alt="" />
+            <img id="cinco" src="https://thumbs.dreamstime.com/b/vector-pixel-art-soup-isolated-cartoon-vector-pixel-art-soup-144999422.jpg" class="card__image" alt="" />
             <div class="card__overlay">
               <div class="card__header">
                 <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
@@ -249,7 +336,7 @@
 
         <li>
           <a href="" class="card">
-            <img src="https://ih1.redbubble.net/image.2698758493.0297/st,small,507x507-pad,600x600,f8f8f8.jpg" class="card__image" alt="" />
+            <img id="seis" src="https://ih1.redbubble.net/image.2698758493.0297/st,small,507x507-pad,600x600,f8f8f8.jpg" class="card__image" alt="" />
             <div class="card__overlay">
               <div class="card__header">
                 <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
@@ -268,7 +355,7 @@
   
         <li>
           <a href="" class="card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqwFagK0Ogbqb50zskRefyyza4Eb93zgMKsQ&usqp=CAU" class="card__image" alt="" />
+            <img id="siete" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqwFagK0Ogbqb50zskRefyyza4Eb93zgMKsQ&usqp=CAU" class="card__image" alt="" />
             <div class="card__overlay">
               <div class="card__header">
                 <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
@@ -298,7 +385,7 @@
     <ul class="cards">
       <li>
         <a href="" class="card">
-          <img src="https://cms-assets.tutsplus.com/uploads/users/71/courses/517/preview_image/pixelArt.jpg" class="card__image" alt="" />
+          <img id="ocho" src="https://cms-assets.tutsplus.com/uploads/users/71/courses/517/preview_image/pixelArt.jpg" class="card__image" alt="" />
           <div class="card__overlay">
             <div class="card__header">
               <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
@@ -314,7 +401,7 @@
       </li>
       <li>
         <a href="" class="card">
-          <img src="https://w7.pngwing.com/pngs/222/981/png-transparent-habbo-house-pixel-art-landscaping-house-flag-apartment-grass.png" class="card__image" alt="" />
+          <img id="nuevo" src="https://w7.pngwing.com/pngs/222/981/png-transparent-habbo-house-pixel-art-landscaping-house-flag-apartment-grass.png" class="card__image" alt="" />
           <div class="card__overlay">
             <div class="card__header">
               <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
@@ -330,7 +417,7 @@
       </li>
       <li>
         <a href="" class="card">
-          <img src="https://static.habbo-happy.net/img/articles/2c6b34_Ref%C3%BAgio_selva_2.png" class="card__image" alt="" />
+          <img id="tencent" src="https://static.habbo-happy.net/img/articles/2c6b34_Ref%C3%BAgio_selva_2.png" class="card__image" alt="" />
           <div class="card__overlay">
             <div class="card__header">
               <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
@@ -359,28 +446,28 @@
   
     <div class="row m-auto flex justify-center items-center">
       <div class="column">
-        <img class="gallery" src="https://graphicriver.img.customer.envatousercontent.com/files/255089679/palm%20trees%20location%20_pv.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=471c12f5c991dbb99e060ac255d1ba92" alt="Nature"  onclick="myFunction(this);">
+        <img class="gallery" id="tencent1" src="https://graphicriver.img.customer.envatousercontent.com/files/255089679/palm%20trees%20location%20_pv.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=471c12f5c991dbb99e060ac255d1ba92" alt="Nature"  onclick="myFunction(this);">
       </div>
       <div class="column">
-        <img class="gallery" src="https://img.freepik.com/free-vector/turtle-with-pixel-art-style_475147-486.jpg" alt="Wildlife"  onclick="myFunction(this);">
+        <img class="gallery" id="tencent2" src="https://img.freepik.com/free-vector/turtle-with-pixel-art-style_475147-486.jpg" alt="Wildlife"  onclick="myFunction(this);">
       </div>
       <div class="column">
-        <img class="gallery" src="http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/57e9c01f0e29bf1.png" alt="Skydiving" onclick="myFunction(this);">
+        <img class="gallery" id="tencent3" src="http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/57e9c01f0e29bf1.png" alt="Skydiving" onclick="myFunction(this);">
       </div>
       <div class="column">
-        <img class="gallery" src="https://media.istockphoto.com/vectors/pixel-art-island-vector-id690130624?k=20&m=690130624&s=612x612&w=0&h=x_FOayCscHsTERn4RPnYSK4iFR1eb9Qq7nFQ1eG-Z6c=" alt="Ocean"  onclick="myFunction(this);">
+        <img class="gallery" id="tencent4" src="https://media.istockphoto.com/vectors/pixel-art-island-vector-id690130624?k=20&m=690130624&s=612x612&w=0&h=x_FOayCscHsTERn4RPnYSK4iFR1eb9Qq7nFQ1eG-Z6c=" alt="Ocean"  onclick="myFunction(this);">
       </div>
       <div class="column">
-        <img class="gallery" src="https://i.pinimg.com/736x/62/ea/a3/62eaa324c6163b3518f67cbacec8729f.jpg" alt="Sunset"  onclick="myFunction(this);">
+        <img class="gallery" id="tencent5" src="https://i.pinimg.com/736x/62/ea/a3/62eaa324c6163b3518f67cbacec8729f.jpg" alt="Sunset"  onclick="myFunction(this);">
       </div>
       <div class="column">
-        <img class="gallery" src="https://media.istockphoto.com/vectors/pixel-art-seamless-background-with-mountains-vector-id910096788?k=20&m=910096788&s=170667a&w=0&h=8YcGXA3WQZhgkEXwYOGy1VlNCXC6skCB0IUT3sZEeII=" alt="Mountains"  onclick="myFunction(this);">
+        <img class="gallery" id="tencent6" src="https://media.istockphoto.com/vectors/pixel-art-seamless-background-with-mountains-vector-id910096788?k=20&m=910096788&s=170667a&w=0&h=8YcGXA3WQZhgkEXwYOGy1VlNCXC6skCB0IUT3sZEeII=" alt="Mountains"  onclick="myFunction(this);">
       </div>
       <div class="column">
-        <img class="gallery" src="https://preview.redd.it/980gpg8pobv31.png?width=640&crop=smart&auto=webp&s=e589ea69756be540350164732c3809b8313074c1" alt="Landscape"  onclick="myFunction(this);">
+        <img class="gallery" id="tencent7" src="https://preview.redd.it/980gpg8pobv31.png?width=640&crop=smart&auto=webp&s=e589ea69756be540350164732c3809b8313074c1" alt="Landscape"  onclick="myFunction(this);">
       </div>
       <div class="column">
-        <img class="gallery" src="https://art.ngfiles.com/images/957000/957402_northman277_underwater-pixelart.png?f1563039001" alt="Fish"  onclick="myFunction(this);">
+        <img class="gallery" id="tencent8" src="https://art.ngfiles.com/images/957000/957402_northman277_underwater-pixelart.png?f1563039001" alt="Fish"  onclick="myFunction(this);">
       </div>
     </div>
     
@@ -402,36 +489,7 @@
 
 
 
-<script>
 
- function changeImage()
-{
-var img = document.getElementById("image");
-img.src="https://i.redd.it/tn1eg77sfmx41.png";
-
-
-var img = document.getElementById("porky");
-img.src="https://media.istockphoto.com/vectors/pixel-art-seamless-background-with-mountains-vector-id910096788?k=20&m=910096788&s=170667a&w=0&h=8YcGXA3WQZhgkEXwYOGy1VlNCXC6skCB0IUT3sZEeII=";
-
-
-
-var img = document.getElementById("cows");
-img.src="https://img.freepik.com/free-vector/turtle-with-pixel-art-style_475147-486.jpg";
-return false;
-}
-
-</script>
-
-<div>
-  <img id="image" src="http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/7d0875ca4d39064.png" />
-
-  <img id="porky" src="http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/7d0875ca4d39064.png" />
-
-  <img id="cows" src="http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/7d0875ca4d39064.png" />
-
-
-  <button id="clickme" onclick="changeImage();">Click to change image!</button>
-</div>
 
 
 <footer>
