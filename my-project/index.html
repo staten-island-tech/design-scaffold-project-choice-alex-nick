@@ -57,10 +57,11 @@
           p-16
           text-9xl
           font-mono
-          text-white
-          bg-rose-600 bg-opacity-70
+
+          bg-black 
           rounded-xl
           drop-shadow-md
+          text-transparent bg-clip-text bg-gradient-to-br from-black to-red-600
         "
       >
        Hawaii
@@ -89,7 +90,7 @@
               function open(event){
                   document.querySelector(".popup").style.display = "block";
               },
-              1500 
+              2000 
           )
       });
       
@@ -146,7 +147,7 @@
       function changeImage()
      {
       var fon = document.getElementById("posts");
-    if (fon.style.fontFamily == "Common Pixel") {
+    if (fon.style.fontFamily == "Common Pixel") {10 
         fon.style.font = "Times New Roman";
     }
     
@@ -213,6 +214,7 @@
      var img = document.getElementById("tencent8");
      img.src="https://gdb.voanews.com/BE9E9C0B-EAB1-44FB-BFD6-1B5EEE13F8DC_cx0_cy1_cw0_w1200_r1.jpg";
 
+
      return false;
 
 
@@ -222,6 +224,8 @@
      </script>
      
      
+
+  
      
       
 
@@ -291,7 +295,7 @@
     <ul class="cards-2">
       <li>
           <a href="" class="card">
-            <img id="quatro" src="https://image.shutterstock.com/image-vector/steamed-bun-pixel-art-food-260nw-1905099391.jpg" class="card__image" alt="" />
+            <img id="quatro" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb_XteGhTcyxA2Hs_zq-_OXDpVdZ92T5ihCTwhibOxxzUR4MGTUK_hdffyP90P9BhGUTA&usqp=CAU" class="card__image" alt="" />
             <div class="card__overlay">
               <div class="card__header">
                 <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     

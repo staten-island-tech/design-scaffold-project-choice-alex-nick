@@ -1,4 +1,4 @@
-@import url("http://fonts.cdnfonts.com/css/common-pixel");
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Hind:wght@300&family=Satisfy&display=swap"rel="stylesheet");
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -51,6 +51,7 @@ html,
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   font-family: "myFont";
+  background-color: black;
 }
 .header:before {
   content: "";
@@ -60,7 +61,7 @@ html,
   left: 0;
   right: 0;
   bottom: 0;
-  background: skyblue;
+  background: black;
   border-radius: 100%;
   -webkit-transform: scale(0);
   transform: scale(0);
@@ -96,10 +97,6 @@ html,
   height: 40rem;
   text-align: center;
   margin-bottom: 3em;
-}
-
-.mages {
-  float: left;
 }
 
 .popup {
@@ -157,10 +154,12 @@ html,
   width: 100%;
   position: fixed;
   background-color: black;
+  z-index: 5;
 }
 
 .navbar a {
-  float: left;
+  display: flex;
+  flex-flow: column wrap;
   font-size: 16px;
   color: white;
   text-align: center;
@@ -169,7 +168,6 @@ html,
 }
 
 .dropdown {
-  float: left;
   overflow: hidden;
 }
 
@@ -201,11 +199,11 @@ html,
 }
 
 .dropdown-content a {
-  float: none;
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+
   text-align: left;
 }
 
@@ -219,7 +217,6 @@ html,
 
 .attraction-img,
 .food-img {
-  float: left;
   width: 55%;
   height: 70%;
   border: 5px solid black;
@@ -263,9 +260,7 @@ html,
   font-size: 1.3rem;
 }
 
-/* The grid: Four equal columns that floats next to each other */
 .column {
-  float: left;
   width: 25%;
   padding: 10px;
 }
@@ -287,7 +282,6 @@ html,
   opacity: 1;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
@@ -303,7 +297,6 @@ html,
 
 /* Expanding image text */
 #imgtext {
-  position: absolute;
   bottom: 15px;
   left: 15px;
   color: black;
